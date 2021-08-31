@@ -1,0 +1,15 @@
+#!/bin/zsh
+#autoload
+
+# Source files contained in the module folder an recompile them if needed
+function source_modules {
+
+    for file in $MODULE_DIR/**/*.zsh; do
+        if [[ "${file}" != *".zwc" && ! "${file}.zwc" -nt "${file}" ]]; then
+            zcompile "${file}" 2>/dev/null
+        fi
+        builtin source $file
+    done
+
+}
+source_modules

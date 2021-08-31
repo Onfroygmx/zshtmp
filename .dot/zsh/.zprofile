@@ -36,7 +36,7 @@ manpath=(
 )
 
 # Add completion add the begining of fpath and custom functions at the end
-fpath=( "$PLUGIN_DIR/completions/src" "${fpath[@]}" "$ZDOTDIR/functions" )
+fpath=( "$PLUGIN_DIR/completions/src" "${fpath[@]}" )
 
 # Ensure path arrays do not contain duplicates.
 typeset -gU path manpath fpath

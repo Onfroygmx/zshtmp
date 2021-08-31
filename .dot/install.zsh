@@ -24,7 +24,7 @@ export ZDOTDIR=${XDG_CONFIG_HOME:-$HOME/.config}/zsh
 export ZSH_CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}"/zsh
 
 printf "\n$fg[green]Clone: Onfroygmx/zsh$reset_color\n"
-git clone --bare https://github.com/Onfroygmx/zsh.git $HOME/.dotgit
+git clone --bare https://github.com/Onfroygmx/zshtmp.git $HOME/.dotgit
 git --git-dir=$HOME/.dotgit --work-tree=$HOME checkout
 
 printf "\n$fg[green]Symlink zshenv file$reset_color\n"

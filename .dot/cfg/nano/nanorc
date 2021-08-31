@@ -1,0 +1,10 @@
+set autoindent
+set historylog
+set indicator
+set linenumbers
+set matchbrackets "(<[{)>]}"
+set tabsize 4
+set tabstospaces
+
+include /usr/local/share/nano/default.nanorc
+include /usr/local/share/nanorc/*.nanorc

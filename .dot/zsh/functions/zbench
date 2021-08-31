@@ -1,0 +1,14 @@
+#!/bin/zsh
+#autoload
+# Stress start zsh and display average
+
+function zbench {
+    float sum=0
+    integer count=${1:-$1}
+    repeat $count { time zsh -ic exit } |& \
+        while IFS='' read line; do
+	    sum+=${${${line% total}##* }//,/.}
+        done
+    print $(( sum / count ))
+}
+zbench "$@"

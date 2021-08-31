@@ -1,0 +1,380 @@
+: 1627540092:147;nano Documents/macinstall/OS/11-installBrewCasks.zsh
+: 1627540249:0;cd Documents/macinstall/OS
+: 1627540255:5269;./11-installBrewCasks.zsh
+: 1627545708:8;nano Brewfile
+: 1627545726:1;rm Brewfile
+: 1627545739:12;brew uninstall sourcetree
+: 1627547222:16;nano Documents/ZSH/.dot/data/zsh/history
+: 1627547261:0;la .cache/
+: 1627547886:11;brew update
+: 1627548522:0;cp Documents/user.js Library/Application\ Support/Firefox/Profiles/ho4asdt7.default-release
+: 1627548601:0;cp -r Documents/macinstall/Soft/Browser/chrome/ Library/Application\ Support/Firefox/Profiles/ho4asdt7.default-release
+: 1627551174:0;cp -r Documents/atom .dot
+: 1627551189:0;rm -rf .atom
+: 1627551200:0;ln -s .dot/atom .atom
+: 1627551294:0;dot add .dot/atom
+: 1627551323:0;dot commit -m "Add atom base settings"
+: 1627551502:0;la .vscode
+: 1627551508:0;la .vscode/extensions
+: 1627551517:18;nano .vscode/argv.json
+: 1627551549:0;mv .vscode .dot/vscode
+: 1627551564:0;ln -s .dot/vscode .vscode
+: 1627551675:0;dot add .dot/vscode
+: 1627551683:3;nano .dot/vscode/argv.json
+: 1627551699:0;dot commit -m "Add vscode base settings"
+: 1627554043:0;cp -r Documents/ZSH/.dot/nano .dot
+: 1627554060:3;nano ~/.dot/zsh/.zshrc
+: 1627554122:0;treedotclean -L 3 .dot -I .dot/plugins/zpmod
+: 1627554164:6;nano Documents/Shared/.zsh/commands.txt
+: 1627554186:12;nano Documents/Shared/.zshBigSur/.dot/modules/aliases/aliases.zsh
+: 1627554218:0;treedotclean -L 3 .dot -I .dotgit\|zpmod'
+: 1627554259:0;dot add .dot/nano
+: 1627554295:0;dot commit -m "Add nano base settings"
+: 1627554321:22;dot push --set-upstream origin master
+: 1627554396:0;la .cache/zsh/zcomp
+: 1627554399:0;la .cache/zsh/zcompcache
+: 1627554416:3;rm .cache/zsh/zcompdump*
+: 1627554450:0;la .dot/**/*.zwc
+: 1627554526:0;la Torrents
+: 1627554674:0;cp Library/Application\ Support/Firefox/Profiles/ho4asdt7.default-release/user.js Library/Application\ Support/Firefox/Profiles/brbn5svq.default-beta
+: 1627554712:0;cp -r Library/Application\ Support/Firefox/Profiles/ho4asdt7.default-release/chrome Library/Application\ Support/Firefox/Profiles/brbn5svq.default-beta
+: 1627566720:3;nano Documents/macinstall/Soft
+: 1627566742:159;nano Documents/macinstall/Soft/dnscrypt/domains-blocklist-apple.txt
+: 1627571532:19;rm -rf /Applications/XCOM\ 2
+: 1627591069:23;nano /Applications/XCOM\ 2/XCOM\ 2\ WotC.app/Contents/MacOS/activated.ini
+: 1627595033:0;date -u +%V$(uname)|sha256sum|sed 's/\W//g
+: 1627595066:0;"date -u +%V$(uname)|sha256sum|sed 's/\W//g'"?
+: 1627595087:0;date -u +%V$(uname)|sha256sum|sed 's/\W//g'?
+: 1627596119:0;cd installArch/
+: 1627596120:0;laaa
+: 1627596129:2;./install.zsh
+: 1627596178:0;lsblk
+: 1627635025:0;echp -SHELL
+: 1627635034:0;echo $SHELL
+: 1627635041:0;which zsh
+: 1627635052:0;echo $manpath
+: 1627635669:7;chronyc sources
+: 1627635713:0;chronyc --help
+: 1627635829:0;chronyc ntpdata
+: 1627711639:0;csrutil disable
+: 1627711682:5;sudo spctl --master-disable
+: 1628352529:0;EPOCHSECONDS
+: 1628353712:0;for
+: 1628359503:1;git clone https://github.com/marlonrichert/zsh-snap.git
+: 1628359510:0;atom zsh-snap
+: 1628359555:0;echo ${(t)sysexits}
+: 1628360586:285;nano .zshenv
+: 1628360877:3;nano .dot/zsh/.zlogin
+: 1628360884:348;nano .dot/zsh/.zprofile
+: 1628362393:0;whence -a dircolors gdircolors
+: 1628362526:747;ssh onfzsnap@192.168.56.104
+: 1628363246:0;la .dot/zsh/modules/dircolor
+: 1628363505:0;git config --global user.email "onfroy@gmx.com"
+: 1628363528:0;dot commit -m "Remove double sourcing of LS_COLORS when modified"
+: 1628363692:0;dot commit -m "Cleanup dircolor code"
+: 1628363695:1;dot push
+: 1628363926:5;dot log -n1 --decorate --oneline
+: 1628364014:0;dot add .gitignore
+: 1628364022:0;dot status -sb
+: 1628366890:0;cd Movies
+: 1628366911:0;mkdir -pm 700 video/test
+: 1628366922:0;la vdeo
+: 1628366927:0;la video
+: 1628366945:0;mkdir -p video2/test
+: 1628366958:0;la video2
+: 1628366968:0;rm -rf video*
+: 1628367295:0;zselect -t 100
+: 1628367829:0;setopt
+: 1628368036:8;sudo nano .dot/zsh/modules/history/history.zsh
+: 1628368275:0;bindkey | grep undo
+: 1628368282:0;bindkey | grep word
+: 1628368356:0;bindkey | egrep '(backward|forward)-word'
+: 1628368407:0;bindkey | egrep 'b'
+: 1628368475:0;bindkey -L
+: 1628368503:0;bindkey -l
+: 1628368901:0;nfocmp -xL1 | grep key_
+: 1628368905:0;infocmp -xL1 | grep key_
+: 1628430673:0;cd /Applications/XCOM\ 2/XCOM\ 2\ WotC.app
+: 1628430691:7297;./Contents/MacOS/XCOM\ 2\ WotC
+: 1628698568:0;cd 01_first_commit
+: 1628698821:0;git checkout tags/v1.0
+: 1628698864:0;mv 01_first_commit v1.0
+: 1628698870:0;cd v1.5
+: 1628699364:0;git checkout tags/v1.5
+: 1628699395:0;cd ../v1.74
+: 1628699740:0;git checkout tags/zinitload
+: 1628699750:0;git checkout tags/ziniload
+: 1628699760:0;la ../v1.5
+: 1628699766:0;cd ../v1.75
+: 1628700131:0;git checkout tags/v1.75
+: 1628700148:0;cd ../v1.8
+: 1628700552:0;git checkout tags/v1.8
+: 1628700665:0;cd ../v2.0
+: 1628702397:0;git checkout tags/v2.0
+: 1628702436:0;cd ../v2.3
+: 1628702452:0;git checkout tags/v2.3
+: 1628702494:0;cd ../v2.4
+: 1628702497:0;git checkout tags/v2.4
+: 1628706445:1;atom .
+: 1628708036:3;nano .dot/zsh/modules/history/history.zsh
+: 1628708320:4;nano /Volumes/DATA/PROJECT/ZSH/zmod/zmod.zsh
+: 1628714691:0;ma /etc/
+: 1628714698:0;la /etc/
+: 1628714721:14;nano .dot/zsh/modules/dircolor/LS_COLORS
+: 1628714747:3;nano .dot/zsh/modules/dircolor/ls_colors.zsh
+: 1628714813:4;rm .dot/zsh/modules/dircolor/ls_colors.zsh*
+: 1628714823:0;la .dot/zsh/modules/dircolor/
+: 1628714833:1;rm .dot/zsh/modules/dircolor/dircolor.zsh.zwc
+: 1628698388:0;cd /Volumes/DATA/PROJECT/ZSH
+: 1628698398:0;cd ..
+: 1628698401:0;rm -rf zinit
+: 1628698408:0;mkdir zinit
+: 1628698410:0;cd zinit
+: 1628698431:0;mkdir 01_first_commit
+: 1628698500:317;git clone https://github.com/zdharma/zinit 01_first_commit
+: 1628698845:385;git clone https://github.com/zdharma/zinit v1.5
+: 1628699384:342;git clone https://github.com/zdharma/zinit v1.74
+: 1628699736:348;git clone https://github.com/zdharma/zinit v1.75
+: 1628700139:400;git clone https://github.com/zdharma/zinit v1.8
+: 1628700561:405;git clone https://github.com/zdharma/zinit v2.0
+: 1628702427:22;git clone https://github.com/zdharma/zinit v2.3
+: 1628702459:22;git clone https://github.com/zdharma/zinit v2.4
+: 1628703621:43;git clone https://github.com/zdharma/zinit vlatest
+: 1628703669:0;la vlatest
+: 1628705489:2;git clone https://github.com/grahampugh/macadmin-scripts.git
+: 1628705497:0;cd macadmin-scripts
+: 1628705505:1;python ./installinstallmacos.py
+: 1628705512:25246;sudo python ./installinstallmacos.py
+: 1628747536:15;sudo /usr/sbin/installer -pkg content/downloads/43/16/071-78704-A_U5B3K7DQY9/cj9xbdobsdoe67yq9e1w2x0cafwjk8ofkr/071-78704.English.dist -target /private/tmp/dmg.wgHG5pApplications/
+: 1628747765:0;la content
+: 1628747769:0;la content/downloads
+: 1628748214:0;du -h -d 1 content
+: 1628748220:0;du -h -d 1 content/downloads
+: 1628748229:0;du -h -d 1 content/downloads/43
+: 1628748234:0;du -h -d 1 content/downloads/43/16
+: 1628748237:0;du -h -d 1 content/downloads/43/16/071-78704-A_U5B3K7DQY9
+: 1628748241:0;du -h -d 1 content/downloads/43/16/071-78704-A_U5B3K7DQY9/cj9xbdobsdoe67yq9e1w2x0cafwjk8ofkr
+: 1628748265:0;la content/downloads/43/16/071-78704-A_U5B3K7DQY9/cj9xbdobsdoe67yq9e1w2x0cafwjk8ofkr
+: 1628748288:4;nano content/downloads/43/16/071-78704-A_U5B3K7DQY9/cj9xbdobsdoe67yq9e1w2x0cafwjk8ofkr/InstallInfo.plist
+: 1628748356:0;nano content/downloads/43/16/071-78704-A_U5B3K7DQY9/cj9xbdobsdoe67yq9e1w2x0cafwjk8ofkr/Info.plist
+: 1628705201:13533;ssh onfblack@192.168.56.104
+: 1628747602:1;la /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources
+: 1628748173:0;la /private/tmp/dmg.wgHG5pApplications/
+: 1628748180:0;la /private/tmp/dmg.wgHG5pApplications/Install\ macOS\ Big\ Sur.app
+: 1628748186:0;la /private/tmp/dmg.wgHG5pApplications/Install\ macOS\ Big\ Sur.app/Contents
+: 1628748191:0;la /private/tmp/dmg.wgHG5pApplications/Install\ macOS\ Big\ Sur.app/Contents/SharedSupport
+: 1628748326:67;nano /Applications/Install\ macOS\ Big\ Sur.app/Contents/Info.plist
+: 1628748404:4;nano /Applications/Install\ macOS\ Big\ Sur.app/Contents/version.plist
+: 1628748458:2;nano /Applications/Install\ macOS\ Big\ Sur.app/Contents/PkgInfo
+: 1628783764:0;cd Documents/macadmin-scripts
+: 1628783775:1;rm -rf content
+: 1628783782:3;sudo rm -rf content
+: 1628783796:0;sudo rm Install_macOS_11.5.2-20G95.sparseimage
+: 1628783805:0;rm -rf /Applications/Install\ macOS\ Big\ Sur.app
+: 1628783818:0;la /private/tmp/
+: 1628749994:0;cd /Applications/XCOM\ 2/XCOM\ 2\ WotC.app/Contents/MacOS
+: 1628892049:5;du -h -d 1 /Applications
+: 1628892109:178;cp -r /Applications/XCOM\ 2 /Volumes/DATA/SOFT
+: 1628892364:21;rm -rf /Volumes/DATA/SOFT/XCOM\ 2
+: 1628892817:0;la /Users/Shared
+: 1628892895:1;du -h -d 1 /Volumes/DATA
+: 1628892911:6;sudo du -h -d 1 /Volumes/DATA
+: 1628893017:22;mv /Volumes/DATA/SOFT/Install_macOS_11.5.2-20G95.dmg ~/Documents/
+: 1628890927:0;chronyc serverstats
+: 1628890980:0;chronyc sourcesstat
+: 1628890983:0;chronyc sourcestat
+: 1628891052:0;la /Applications
+: 1628891058:0;la /Volumes
+: 1628891168:2664;sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/Big
+: 1628932671:5;du -h -d 1 /Volumes/
+: 1628932686:5;sudo du -h -d 1 /Volumes/olumes/
+: 1628932698:1;sudo du -h -d 1 /Volumes/
+: 1628932740:0;mkdir -p Documents/Softs
+: 1628932766:62;mv /Volumes/Work/* Documents/Soft
+: 1628932836:0;la Documents/Soft
+: 1628932845:0;la Documents/Softs
+: 1628932856:0;rm -rf Documents/Softs
+: 1628933134:0;mkdir Soft
+: 1628933165:237;mv /Volumes/DATA/* Soft
+: 1628933568:0;la Soft
+: 1628933575:0;la Soft/PROJECT
+: 1628933585:0;la Soft/
+: 1628933589:0;la Soft/SOFT
+: 1628933631:0;mv Documents/Soft/* Soft
+: 1628934201:270;mv Soft/* /Volumes/DATA
+: 1628934487:3;du -h -d 1 .
+: 1628946147:0;cd Documents
+: 1628946170:3;git clone https://github.com/Onfroygmx/installArch.git
+: 1628946182:7;nano installArch/user.zsh
+: 1628946194:0;cd install
+: 1628946199:0;cd installArch
+: 1628946202:0;git status
+: 1628946209:0;git stage user.zsh
+: 1628946213:1;git push
+: 1628946375:0;cd
+: 1628946393:5;sudo rm -rfv /Volumes/Work/.Spotlight-V100
+: 1628946424:0;rm -rfv /Volumes/Work/.Trashes
+: 1628946428:0;sudo rm -rfv /Volumes/Work/.Trashes
+: 1628946442:0;rm -rfv /Volumes/Work/.fseventsd
+: 1628946446:0;sudo rm -rfv /Volumes/Work/.fseventsd
+: 1628975841:11;sudo .dot/install.zsh
+: 1628975866:0;ln -s $ZDOTDIR/zshenv $HOME/.zshenv
+: 1628975872:0;l
+: 1628976110:0;cd /Volumes/BCK/Shared/.zsh/
+: 1628976116:0;ls -la
+: 1628976994:0;ls -la /Volumes
+: 1628977228:33;nano .dot/data/zsh/history
+: 1628977276:0;vsudo mdutil -i off -d /Volumes/Work
+: 1628977291:9;sudo mdutil -i off -d /Volumes/Work
+: 1628977312:1;sudo mdutil -i off -d /Volumes/DATA
+: 1629007643:0;cd /Volumes
+: 1629007646:0;ls
+: 1629007714:0;cd /Volumes/BCK/macinstall/OS
+: 1629007733:8;nano 02-appSettings.zsh
+: 1629007797:2461;./10-installBrewFormulae.zsh
+: 1629011165:30;nano 10-installBrewFormulae.zsh
+: 1629011285:44;brew install colordiff htop nanorc pstree tree
+: 1629011382:31;brew install --cask appcleaner # Application uninstaller\
+brew install --cask bitwarden # Secure and free password manager for all of your devices\
+brew install --cask commander-one # Two-panel file manager\
+\
+brew install --cask easyfind # Find files, folders, or contents in any file\
+brew install --cask openoffice # Free and open-source productivity suite\
+brew install --cask sourcetree # Graphical client for Git version control\
+brew install --cask thunderbird # Customizable email client\
+brew install --cask transmission # Lightweight BitTorrent client\
+brew install --cask virtualbox # Free and open-source hosted hypervisor for x86 virtualization\
+brew install --cask virtualbox-extension-pack # Oracle VirtualBox Extension Pack\
+brew install --cask vlc # Multimedia player
+: 1629011615:2189;brew install --cask appcleaner bitwarden commander-one easyfind openoffice thunderbird transmission virtualbox virtualbox-extension-pack vlc
+: 1629013818:35;nano 11-installBrewCasks.zsh
+: 1629013978:2215;brew install --cask atom sublime-text visual-studio-code brave-browser firefox tor-browser opera chronycontrol etrecheckpro lockrattler onyx silentknight
+: 1629016230:7;./01-globalSettings.zsh
+: 1629016247:1;./02-appSettings.zsh
+: 1629017483:281;nano /Volumes/Work/chrony.conf
+: 1629017862:42;brew install lulu
+: 1629017937:12;brew install zsh-completions
+: 1629035986:0;/Applications/Civ6.app/Contents/MacOS/Civ6_Metal_Exe ; exit;
+: 1629050475:27;bubo
+: 1629050514:23;bubc
+: 1629051638:0;cd /Volumes/DATA/XCOM\ 2/XCOM\ 2\ WotC.app/Contents/MacOS
+: 1629051642:909;./XCOM\ 2\ WotC
+: 1630338484:80;ssh onfmod@192.168.56.102
+: 1630338569:14;ssh onf2@192.168.56.102
+: 1630341476:0;cp -r /Volumes/Work/dot/plugins/zpmod .dot/plugins
+: 1630341497:7;nano /Volumes/Work/dot/zsh/.zshrc
+: 1630340607:0;la .cache/zsh
+: 1630340853:8;ssh onf@192.168.56.102
+: 1630340975:0;git config --global user.name "Onf-MBP"
+: 1630340992:0;git config --global user.email onfroy@gmx.com
+: 1630341139:30;ssh-keygen -t rsa -b 4096 -C "onfroy@gmx.com"
+: 1630341184:0;eval "$(ssh-agent -s)"
+: 1630341203:35;nano .ssh/config
+: 1630341248:0;ssh-add -K ~/.ssh/github_rsa
+: 1630341264:0;pbcopy < ~/.ssh/github_rsa.pub
+: 1630341381:0;la /Volumes/Work/dot/data/zsh
+: 1630341406:0;la /Volumes/Work/PROJECT/dot/.dot/
+: 1630341433:2;cp /Volumes/Work/dot/data/zsh/history .dot/data/zsh
+: 1630339355:0;la .dot
+: 1630339837:19;dot diff
+: 1630339871:0;dot stage .dot/zsh/.zprofile
+: 1630339877:0;dot stage .dot/zsh/modules/dircolor/dircolor.zsh
+: 1630339898:1;dot commit -m "Correct small folder creation typo"
+: 1630340344:0;dot commit -m "Correct cp error"
+: 1630340354:0;rm -rf .*
+: 1630340464:0;la .dot/
+: 1630340513:0;rm -rf .dot
+: 1630340521:0;rm -rf .zsh_sessions
+: 1630340535:0;rm -rf .vscode
+: 1630340540:0;rm -rf README.md
+: 1630341752:0;dot commit -m "Add comment"
+: 1630341881:1;atom /Users/Shared/GIT/zpmod
+: 1630342364:389;nano bck.txt
+: 1630348339:0;dot stage .dot/zsh/modules/aliases/aliases_general.zsh
+: 1630348351:0;dot commit -m "Change alias for treedot"
+: 1630348950:16;bcubo
+: 1630349082:40;nano .dot/zsh/modules/dircolor/dircolor.zsh
+: 1630349125:1;atom .dot/zsh
+: 1630349380:36;nano .dot/zsh/.zshrc
+: 1630344635:0;treedotclean -L 3 .dot -I '.dotgit\|zpmod'
+: 1630344661:0;echo $fpath
+: 1630344664:0;echo $path
+: 1630344711:0;la .dot/zsh/modules/**/*.zwc
+: 1630344714:0;la .dot/zsh/modules/**/*.zsh
+: 1630344735:0;zpmod -m source-study
+: 1630344738:0;zpmod -p source-study
+: 1630344748:0;zpmod -h
+: 1630344755:0;zpmod -l source-study
+: 1630344762:0;zpmod source-study -l
+: 1630344775:0;la .dot/plugins/syntax-highlighting/highlighters/
+: 1630344785:0;la .dot/plugins/syntax-highlighting/highlighters/**/*.zsh
+: 1630344790:0;la .dot/plugins/syntax-highlighting/highlighters/**/*.zwc
+: 1630344854:2;nano .gitignore
+: 1630345188:2;nano .dot/nano/nanorc
+: 1630345209:4;brew info nanorc
+: 1630345784:4;tail -F /var/log/system.log
+: 1630345791:15;sudo fs_usage mdworker mds
+: 1630345938:0;tar -cxf dotfile-$(date +%Y-%m-%d).tar.gz .dot
+: 1630346002:4;tar -cvjf dotfile-$(date +%Y-%m-%d).tar.gz .dot
+: 1630346030:2;tar -cvjf dotfile-$(date +%Y-%m-%d_%H-%M-%S).tar.gz .dot
+: 1630346065:1;tar -tvf dotfile-2021-08-30_19-53-50.tar.gz
+: 1630346103:0;mkdir -p /Volumes/DATA/BACKUP/dotfile
+: 1630346129:2;tar -cvjf /Volumes/DATA/BACKUP/dotfile/dotfile-$(date +%Y-%m-%d_%H-%M-%S).tar.gz .dot
+: 1630346140:0;la /Volumes/DATA/BACKUP/dotfile
+: 1630346153:1;rm dotfile-2021-08-30.tar.gz
+: 1630346163:1;rm dotfile-2021-08-30_19-53-50.tar.gz
+: 1630346191:10;nano .gitconfig
+: 1630346212:24;nano .dot/install.zsh
+: 1630346248:0;dot stage .dot/install.zsh
+: 1630346257:0;dot commit -m "Add comment to install script"
+: 1630346259:2;dot push origin master
+: 1630346420:0;ls /private/var/folders/*/*/T/com.apple.metadata.mdworker
+: 1630346424:0;ls /private/var/folders/*/*/C/com.apple.metadata.mdworker
+: 1630346449:5;sudo mdutil -Ea
+: 1630346491:20;tail -F /var/log/system.log | grep -v com.apple.mdworker
+: 1630346586:8;man asl.conf
+: 1630346604:168;nano /etc/asl.conf
+: 1630346775:0;find /private/var/folders/*/*/C/com.apple.metadata.mdworker -type d
+: 1630346783:0;find /private/var/folders/*/*/T/com.apple.metadata.mdworker -type d
+: 1630346814:0;ls -l ${TMPDIR/T\//}'C/com.apple.metadata.mdworker'
+: 1630346819:4;sudo ls -l ${TMPDIR/T\//}'C/com.apple.metadata.mdworker'
+: 1630346843:0;sudo ls -l ${TMPDIR/T\//}'C/com.apple.metadata.mdworker' | wc -l
+: 1630346947:1;sudo pgrep mdworker | xargs -I % -n1 sudo lsof -p % | grep /Volumes | awk '{print $1," ",$3," ",$9}'
+: 1630347188:1;chronyc tracking
+: 1630347197:0;sudo chronyc serverstats
+: 1630347210:1;chronyc sourcestats
+: 1630347227:0;chronyc activity
+: 1630347239:0;sudo chronyc ntpdata
+: 1630347892:0;la /Volumes/DATA
+: 1630347918:0;mkdir -p /Volumes/DATA/BACKUP/chrony
+: 1630347936:0;mv /Volumes/Work/chrony.conf /Volumes/DATA/BACKUP/chrony
+: 1630347968:1;mv /Volumes/Work/dot /Volumes/DATA/BACKUP
+: 1630347995:0;la /Volumes/Work
+: 1630348000:0;la /Volumes/Work/PROJECT
+: 1630348064:0;treedotclean
+: 1630348071:0;treedotclean -L 3
+: 1630348077:0;treedotclean -L 3 .dot
+: 1630348117:0;tree -ahC -L 4 --dirsfirst -I .dotgit .dot
+: 1630348163:0;tree -ahC -L 4 --dirsfirst -I .dotgit\|zinit .dot
+: 1630348178:0;tree -ahC -L 4 --dirsfirst -I .dotgit\|zpmod .dot
+: 1630348205:0;tree -ahC -L 4 --dirsfirst -I completions\|.dotgit\|zpmod .dot
+: 1630348253:31;nano .dot/zsh/modules/aliases/aliases_general.zsh
+: 1630348293:0;treedotclean .dot
+: 1630345092:4396;ssh onf3@192.168.56.102
+: 1630349512:0;zpmod source-study
+: 1630349516:0;repeat 10 { time zsh -i -c exit; }
+: 1630349518:1;for i in $(seq 1 10); do time zsh -ic exit; done;
+: 1630349556:0;la
+: 1630349571:3;nano .cache/zsh/ls_colors.zsh
+: 1630349592:0;dot status
+: 1630350490:9;nano /Volumes/Work/PROJECT/.zsh/commands.txt
+: 1630350518:14;nano /Volumes/Work/PROJECT/macinstall/OS/10-installBrewFormulae.zsh
+: 1630350534:69;brew leaves | xargs -n1 brew desc
+: 1630350635:46;nano /Volumes/Work/PROJECT/macinstall/OS/11-installBrewCasks.zsh
+: 1630350683:3;brew deps --tree --installed
+: 1630350713:6;brew leaves | xargs brew deps --installed --for-each | sed "s/^.*:/$(tput setaf 4)&$(tput sgr0)/"
+: 1630350756:6;brew deps --include-build --tree $(brew leaves)
+: 1630350765:0;la .cache/zsh/
+: 1630350796:21;nano .dot/zsh/modules/aliases/brew_aliases.zsh
+: 1630350830:0;alias
+: 1630350836:0;exit

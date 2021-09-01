@@ -23,4 +23,4 @@ PROMPT='%F{green}%n%f %F{cyan}%(4~|%-1~/.../%2~|%~)%f %F{magenta}%B>%b%f '
 RPROMPT='%(?.%F{green}.%F{red}[%?] - )%B%D{%H:%M:%S}%b%f'
 
 ## Source module files
-@source_modules
+@source_modules $MODULE_DIR

@@ -4,7 +4,7 @@
 # Source files contained in the module folder an recompile them if needed
 function source_modules {
 
-    for file in $MODULE_DIR/**/*.zsh; do
+    for file in $1/**/*.zsh; do
         if [[ "${file}" != *".zwc" && ! "${file}.zwc" -nt "${file}" ]]; then
             zcompile "${file}" 2>/dev/null
         fi
@@ -12,4 +12,4 @@ function source_modules {
     done
 
 }
-source_modules
+source_modules "$@"

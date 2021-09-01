@@ -52,8 +52,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $PLUGINS_DIR/
 
 printf "\n$fg[green]Symlink config files$reset_color\n"
 ## Set zshenv file
-printf "\n$fg[magenta]Symlink zshenv file$reset_color\n"
+printf "$fg[magenta]Symlink zshenv file$reset_color\n"
 [[ ! -f $HOME/.zshenv && -f $ZDOTDIR/zshenv ]] && ln -s $ZDOTDIR/zshenv $HOME/.zshenv
 ## Set nanorc files
-printf "\n$fg[magenta]Symlink nanorc file$reset_color\n"
+printf "$fg[magenta]Symlink nanorc file$reset_color\n"
 ln -s .dot/cfg/nano/nanorc .nanorc
